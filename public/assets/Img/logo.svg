@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <rect width="512" height="512" rx="128" fill="#0b132b"/>
+  
+  <!-- Shield Shape -->
+  <path d="M256 80L120 140V240C120 326.4 177.6 406.8 256 432C334.4 406.8 392 326.4 392 240V140L256 80Z" 
+        stroke="#00b4d8" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Keyhole / Lock Core -->
+  <circle cx="256" cy="220" r="40" stroke="#00b4d8" stroke-width="12"/>
+  <path d="M256 260V340" stroke="#00b4d8" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Subtle Glow Effect -->
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+</svg>

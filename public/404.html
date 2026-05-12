@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Página No Encontrada | VanguardiaPass</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .error-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            text-shadow: 0 0 2rem rgba(212, 175, 55, 0.3);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .error-message {
+            font-size: 2rem;
+            color: var(--text-main);
+        }
+        .btn-back {
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <main class="app-container">
+        <div class="error-container">
+            <header class="header">
+                <div class="error-code">404</div>
+                <h1 class="title">PÁGINA NO ENCONTRADA</h1>
+                <p class="subtitle">La página que buscas no existe o fue movida.</p>
+            </header>
+            
+            <p class="error-message">No se pudo encontrar el recurso solicitado.</p>
+            
+            <a href="index.html" class="btn-primary btn-back">Volver al Inicio</a>
+        </div>
+    </main>
+</body>
+</html>

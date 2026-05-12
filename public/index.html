@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Primario -->
+    <title>VanguardiaPass - Seguridad de vanguardia en las contraseñas de tu negocio</title>
+    <meta name="title" content="VanguardiaPass - Seguridad de vanguardia en las contraseñas de tu negocio">
+    <meta name="description"
+        content="Seguridad de vanguardia en las contraseñas de cualquier tipo de negocio. Protege tu infraestructura con estándares criptográficos modernos.">
+    <meta name="keywords"
+        content="seguridad empresarial, generador de contraseñas negocio, ciberseguridad corporativa, protección de datos, accesos seguros">
+    <meta name="author" content="Vanguardia Security Solutions">
+    <link rel="canonical" href="https://vanguardia-security.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vanguardia-security.com/">
+    <meta property="og:title" content="VanguardiaPass - Seguridad para tu Negocio">
+    <meta property="og:description"
+        content="Seguridad de vanguardia en las contraseñas de cualquier tipo de negocio. Robusta y profesional.">
+    <meta property="og:image" content="assets/Img/logo.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vanguardia-security.com/">
+    <meta property="twitter:title" content="VanguardiaPass - Gestión de Contraseñas">
+    <meta property="twitter:description"
+        content="Seguridad de vanguardia en las contraseñas de cualquier tipo de negocio.">
+    <meta property="twitter:image" content="assets/Img/logo.svg">
+
+    <!-- Favicon e Identidad -->
+    <link rel="icon" type="image/svg+xml" href="assets/Img/logo.svg">
+    <link rel="apple-touch-icon" href="assets/Img/logo.svg">
+    <meta name="theme-color" content="#d4af37">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!-- Datos Estructurados JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "VanguardiaPass Enterprise",
+      "url": "https://vanguardia-security.com/",
+      "description": "Seguridad de vanguardia en las contraseñas de cualquier tipo de negocio.",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Vanguardia Security Solutions"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <main class="app-container">
+        <!-- Aurora Boreal Layers -->
+        <div class="aurora-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="blob blob-4"></div>
+        </div>
+        <div class="grain-overlay"></div>
+
+        <header class="header">
+            <h1 class="title">Generador de Contraseñas</h1>
+            <p class="subtitle">Seguridad de vanguardia en las contraseñas de cualquier tipo de negocio.</p>
+        </header>
+
+        <section class="display-section" aria-labelledby="display-heading">
+            <h2 id="display-heading" class="sr-only">Resultado de Generación</h2>
+            <div class="password-box">
+                <input type="text" id="password-input" readonly placeholder="P4ssw0rd!"
+                    aria-label="Contraseña generada">
+                <div class="actions">
+                    <button id="toggle-visibility" class="btn-icon" title="Mostrar/Ocultar"
+                        aria-label="Mostrar u ocultar contraseña">
+                        <svg id="eye-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <!-- Eye Open -->
+                            <g id="eye-open">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </g>
+                            <!-- Eye Closed -->
+                            <g id="eye-closed" style="display: none;">
+                                <path
+                                    d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24">
+                                </path>
+                                <line x1="1" y1="1" x2="23" y2="23"></line>
+                            </g>
+                        </svg>
+                    </button>
+                    <button id="copy-password" class="btn-icon" title="Copiar al portapapeles"
+                        aria-label="Copiar contraseña al portapapeles">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="strength-indicator">
+                <div class="strength-meter" id="strength-meter">
+                    <div class="segment" data-segment="1"></div>
+                    <div class="segment" data-segment="2"></div>
+                    <div class="segment" data-segment="3"></div>
+                    <div class="segment" data-segment="4"></div>
+                </div>
+                <span id="strength-text" class="strength-text" aria-live="polite">Seguridad: Media</span>
+            </div>
+        </section>
+
+        <section class="config-section" aria-labelledby="config-heading">
+            <h2 id="config-heading" class="section-title-subtle">Política de Seguridad de Acceso</h2>
+            <div class="config-group">
+                <div class="label-row">
+                    <label for="length-slider">Longitud: <span id="length-val">12</span></label>
+                </div>
+                <input type="range" id="length-slider" min="6" max="32" value="12" class="slider">
+            </div>
+
+            <div class="options-grid">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="include-uppercase" checked>
+                    <span class="checkmark"></span>
+                    Mayúsculas (A-Z)
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="include-lowercase" checked>
+                    <span class="checkmark"></span>
+                    Minúsculas (a-z)
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="include-numbers" checked>
+                    <span class="checkmark"></span>
+                    Números (0-9)
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="include-symbols">
+                    <span class="checkmark"></span>
+                    Símbolos (!@#$%)
+                </label>
+            </div>
+
+            <button id="generate-btn" class="btn-primary">Generar Contraseña</button>
+        </section>
+
+        <footer class="footer">
+            <p>© 2026 Vanguardia Security Solutions. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite">¡Contraseña copiada!</div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('SW Registered'))
+                    .catch(err => console.log('SW Registration Failed', err));
+            });
+        }
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "vanguardia-pass-enterprise",
+  "version": "1.0.0",
+  "description": "Seguridad de vanguardia en las contraseñas de cualquier tipo de negocio.",
+  "main": "public/assets/js/main.js",
+  "scripts": {
+    "build:css": "cleancss -o dist/assets/css/styles.css public/assets/css/styles.css",
+    "build:js": "terser public/assets/js/main.js -o dist/assets/js/main.js --compress --mangle",
+    "build": "node build.js",
+    "start": "npx serve public"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "security",
+    "business",
+    "enterprise"
+  ],
+  "author": "Vanguardia Security Solutions",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.31.1"
+  }
+}
