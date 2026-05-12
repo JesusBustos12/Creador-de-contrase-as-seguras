@@ -3,7 +3,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 // Configuration
-const SRC_DIR = path.join(__dirname, 'public');
+const SRC_DIR = path.join(__dirname, 'docs');
 const DIST_DIR = path.join(__dirname, 'dist');
 
 /**

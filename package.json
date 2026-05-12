@@ -2,12 +2,12 @@
   "name": "vanguardia-pass-enterprise",
   "version": "1.0.0",
   "description": "Seguridad de vanguardia en las contraseñas de cualquier tipo de negocio.",
-  "main": "public/assets/js/main.js",
+  "main": "docs/assets/js/main.js",
   "scripts": {
-    "build:css": "cleancss -o dist/assets/css/styles.css public/assets/css/styles.css",
-    "build:js": "terser public/assets/js/main.js -o dist/assets/js/main.js --compress --mangle",
+    "build:css": "cleancss -o dist/assets/css/styles.css docs/assets/css/styles.css",
+    "build:js": "terser docs/assets/js/main.js -o dist/assets/js/main.js --compress --mangle",
     "build": "node build.js",
-    "start": "npx serve public"
+    "start": "npx serve docs"
   },
   "keywords": [
     "password",
