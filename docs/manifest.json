@@ -8,9 +8,9 @@
   "theme_color": "#d4af37",
   "icons": [
     {
-      "src": "assets/Img/logo.svg",
+      "src": "assets/Img/seguridad.png",
       "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/png"
     }
   ]
 }

@@ -1,11 +1,11 @@
-const CACHE_NAME = 'vanguardia-pass-v2';
+const CACHE_NAME = 'vanguardia-pass-v3';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './manifest.json',
   './assets/css/styles.css',
   './assets/js/main.js',
-  './assets/Img/logo.svg'
+  './assets/Img/seguridad.png'
 ];
 
 // Install Event
