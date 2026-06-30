@@ -20,6 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const strengthText = document.getElementById('strength-text');
     const toast = document.getElementById('toast');
 
+    // Popup Elements
+    const popupOverlay = document.getElementById('password-popup');
+    const popupPasswordDisplay = document.getElementById('popup-password-display');
+    const closePopupBtn = document.getElementById('close-popup-btn');
+    const popupCopyBtn = document.getElementById('popup-copy-btn');
+    const popupAcceptBtn = document.getElementById('popup-accept-btn');
+
     // Character Sets
     const CHAR_SETS = {
         upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -140,11 +147,74 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Event Listeners ---
 
+    // Show Popup
+    const showPopup = (password) => {
+        if (!password) return;
+        popupPasswordDisplay.textContent = password;
+        popupOverlay.classList.add('show');
+        popupOverlay.setAttribute('aria-hidden', 'false');
+    };
+
+    // Hide Popup
+    const hidePopup = () => {
+        popupOverlay.classList.remove('show');
+        popupOverlay.setAttribute('aria-hidden', 'true');
+    };
+
+    // Close popup handlers
+    closePopupBtn.addEventListener('click', hidePopup);
+    popupAcceptBtn.addEventListener('click', hidePopup);
+    popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay) {
+            hidePopup();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && popupOverlay.classList.contains('show')) {
+            hidePopup();
+        }
+    });
+
+    // Copy inside popup
+    popupCopyBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const pwd = popupPasswordDisplay.textContent;
+        if (!pwd) return;
+
+        try {
+            await navigator.clipboard.writeText(pwd);
+            showToast('¡Contraseña copiada!', 'success');
+
+            // Copy tooltip positioning inside popup
+            const popupTooltip = document.createElement('div');
+            popupTooltip.className = 'copy-tooltip';
+            popupTooltip.textContent = '¡Copiado!';
+
+            const rect = popupCopyBtn.getBoundingClientRect();
+            popupTooltip.style.left = `${rect.left + rect.width / 2}px`;
+            popupTooltip.style.top = `${rect.top - 10}px`;
+
+            document.body.appendChild(popupTooltip);
+
+            setTimeout(() => {
+                popupTooltip.classList.add('fade-out');
+                setTimeout(() => popupTooltip.remove(), 600);
+            }, 1000);
+        } catch (err) {
+            console.error('Error al copiar:', err);
+        }
+    });
+
     // Generate on click
     generateBtn.addEventListener('click', (e) => {
         e.preventDefault();
         generateBtn.classList.add('clicked');
         generatePassword();
+
+        // Show popup with the new password
+        showPopup(passwordInput.value);
 
         // Remove class after animation triggers (300ms)
         setTimeout(() => {
