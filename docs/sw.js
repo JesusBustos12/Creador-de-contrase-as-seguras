@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vanguardia-pass-v1';
+const CACHE_NAME = 'vanguardia-pass-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
