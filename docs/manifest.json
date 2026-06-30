@@ -8,9 +8,9 @@
   "theme_color": "#d4af37",
   "icons": [
     {
-      "src": "assets/Img/seguridad.png",
+      "src": "assets/Img/shield-solid-full.svg",
       "sizes": "any",
-      "type": "image/png"
+      "type": "image/svg+xml"
     }
   ]
 }
