@@ -34,23 +34,6 @@ Diseñada como una Progressive Web App (PWA) de alto rendimiento, está construi
 └── dist/                     # Build optimizado para producción
 ```
 
-## Instalación y Ejecución Local
-
-Para ejecutar el proyecto en un entorno de desarrollo local:
-
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/JesusBustos12/Creador-de-contrase-as-seguras.git
-   ```
-2. Instalar dependencias de desarrollo:
-   ```bash
-   npm install
-   ```
-3. Generar el build de producción:
-   ```bash
-   npm run build
-   ```
-
 ## Demo en vivo
 [VanguardiaPass Enterprise](https://jesusbustos12.github.io/Creador-de-contrase-as-seguras/)
 
@@ -61,4 +44,3 @@ Para ejecutar el proyecto en un entorno de desarrollo local:
 - **GitHub**: [JesusBustos12](https://github.com/JesusBustos12)
 - **LinkedIn**: [Jesús Bustos Arizmendi](https://linkedin.com/in/jesus-bustos-arizmendi-325329283)
 - **Correo**: jesusbustosarizmendi0@gmail.com
-- **Celular/WhatsApp**: +52 762 119 2732
