@@ -1,73 +1,64 @@
-# VanguardiaPass Enterprise - Portafolio Frontend
+# VanguardiaPass Enterprise
 
-## Descripción
-**VanguardiaPass Enterprise** es una aplicación web enfocada en la seguridad que permite a los usuarios generar contraseñas de grado criptográfico con una estética profesional y un enfoque prioritario en la privacidad.
+**VanguardiaPass Enterprise** es una aplicación web enfocada en la seguridad que permite la generación de contraseñas de grado criptográfico, con una estética profesional y un enfoque prioritario en la privacidad del usuario.
 
-El proyecto es una Progressive Web App (PWA) construida con tecnologías web nativas, sin dependencias de frameworks externos, lo que garantiza un alto rendimiento, soporte offline y una experiencia de usuario fluida en cualquier dispositivo.
+Diseñada como una Progressive Web App (PWA) de alto rendimiento, está construida con tecnologías web nativas, eliminando la dependencia de frameworks externos. Esto garantiza una ejecución rápida, soporte offline robusto y una experiencia de usuario fluida en cualquier dispositivo.
 
-Perfecto para demostrar habilidades frontend avanzadas en un portafolio profesional.
+## Características Principales
 
-## Objetivo
-Como desarrollador, creé este proyecto para:
+- **Seguridad Criptográfica**: Generación de entropía real en el lado del cliente utilizando la API `window.crypto.getRandomValues`. Ninguna contraseña o dato sensible viaja por la red, garantizando privacidad absoluta (Zero-Knowledge).
+- **Progressive Web App (PWA)**: Completamente instalable en dispositivos móviles y de escritorio. Soporte offline mediante Service Workers utilizando estrategias Network-First y Cache-Fallback.
+- **Diseño Responsivo y Moderno**: Interfaz de usuario adaptable a cualquier tamaño de pantalla, con un diseño limpio, profesional y micro-interacciones fluidas utilizando CSS nativo.
+- **Zero Dependencies**: Arquitectura construida 100% con Vanilla HTML5, CSS3 y JavaScript (ES6+), garantizando máxima velocidad de carga, mantenibilidad a largo plazo y control absoluto sobre el DOM.
+- **Accesibilidad (A11y)**: Implementación de estándares ARIA para asegurar la compatibilidad con lectores de pantalla y ofrecer una experiencia inclusiva.
 
-- Mostrar dominio completo de **JavaScript vanilla** (ES6+) aplicando lógica funcional sin necesidad de frameworks pesados.
-- Implementar **Seguridad Criptográfica** real en el navegador mediante el uso de la API `window.crypto.getRandomValues`.
-- Desarrollar una **Progressive Web App (PWA)** instalable, con soporte offline mediante Service Workers y estrategias Network-First.
-- Crear una interfaz moderna, profesional y responsiva utilizando **CSS3 puro** con variables nativas y animaciones.
-- Aplicar principios de **Accesibilidad Web (A11y)** cumpliendo con estándares ARIA para mejorar la experiencia de todos los usuarios.
-- Demostrar habilidades en la configuración de **Vercel** para despliegues optimizados y uso de scripts de build personalizados.
+## Stack Tecnológico
 
-## Características
-- **Seguridad Criptográfica**: Generación de entropía real y segura en el lado del cliente, garantizando que ninguna contraseña viaje por la red.
-- **PWA (Progressive Web App)**: Instalable en dispositivos móviles y de escritorio, con soporte para funcionar sin conexión a internet.
-- **Diseño Responsivo y Moderno**: Adaptado perfectamente para cualquier tamaño de pantalla con una interfaz cuidada y profesional.
-- **Sin Dependencias**: Construido 100% con Vanilla HTML, CSS y JavaScript para máxima velocidad de carga y control absoluto sobre el código.
-- **Accesibilidad Optimizada**: Implementación de estándares ARIA para compatibilidad con lectores de pantalla y mejor usabilidad.
+- **Estructura**: HTML5 Semántico.
+- **Estilos**: CSS3 (Variables nativas, flexbox/grid, animaciones).
+- **Lógica**: JavaScript (ES6+ puro, arquitectura modular).
+- **PWA**: Service Workers, Web App Manifest.
+- **Despliegue e Integración**: Configuración para GitHub Pages y Vercel, con scripts de build personalizados en Node.js para optimización de assets.
 
-## Tecnologías utilizadas
-- **Frontend**: HTML5 Semántico.
-- **Estilos**: CSS3 (Variables nativas, animaciones, diseño responsivo).
-- **Lógica**: JavaScript (ES6+ puro sin frameworks).
-- **PWA**: Service Workers (Estrategia Network-First con fallback en caché) y Web App Manifest.
-- **Despliegue**: Configuración lista para Vercel.
+## Estructura del Proyecto
 
-## Estructura del proyecto
 ```text
-Generador de contraseñas/
-├── package.json              # Scripts raíz para gestión de dependencias (desarrollo)
-├── build.js                  # Script Node.js de construcción para producción
-├── Vercel/                   # Configuraciones listas para despliegue en Vercel
-├── public/                   # Código de la aplicación y recursos estáticos
-│   ├── index.html            # Página principal de la aplicación
-│   ├── manifest.json         # Configuración del Manifest de la PWA
-│   ├── sw.js                 # Service Worker para funcionalidad offline
-│   └── assets/               # Archivos CSS, JavaScript e imágenes
-└── dist/                     # Build de producción (generado dinámicamente)
+/
+├── package.json              # Gestión de dependencias y scripts de desarrollo
+├── build.js                  # Pipeline de construcción para optimización de producción
+├── docs/                     # Código fuente y entorno de desarrollo (GitHub Pages)
+│   ├── index.html            # Entry point de la aplicación
+│   ├── manifest.json         # Web App Manifest
+│   ├── sw.js                 # Service Worker
+│   └── assets/               # Estilos, scripts y recursos estáticos
+└── dist/                     # Build optimizado para producción
 ```
 
-## Habilidades demostradas
-Este proyecto refleja competencias reales de un Frontend Developer enfocado en calidad y rendimiento:
+## Instalación y Ejecución Local
 
-- **Frontend sólido y sin frameworks**: Manipulación eficiente del DOM, manejo avanzado de eventos y estructuración de lógica compleja puramente con JavaScript Vanilla.
-- **Conocimientos de Seguridad**: Comprensión e implementación de APIs criptográficas del navegador web.
-- **Desarrollo PWA**: Configuración e implementación de Service Workers, estrategias de caché y Web App Manifests.
-- **UI/UX y Accesibilidad**: Diseño de interfaces atractivas con CSS puro, animaciones fluidas y cumplimiento de estándares de accesibilidad (ARIA).
-- **Optimización y Build**: Creación de scripts de construcción (`build.js`) personalizados para preparar el código para producción.
+Para ejecutar el proyecto en un entorno de desarrollo local:
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/JesusBustos12/Creador-de-contrase-as-seguras.git
+   ```
+2. Instalar dependencias de desarrollo:
+   ```bash
+   npm install
+   ```
+3. Generar el build de producción:
+   ```bash
+   npm run build
+   ```
 
 ## Demo en vivo
-*(Próximamente disponible / Enlace a desplegar)*
-
-## Notas para empleadores y Clientes
-Este proyecto demuestra mi capacidad para construir aplicaciones web eficientes, seguras y altamente optimizadas sin depender de abstracciones de frameworks. Me enfoco en aprovechar al máximo las APIs nativas del navegador web, priorizando el rendimiento, la seguridad y la experiencia del usuario (offline-first).
-
-Estoy listo para aportar valor real en un equipo como **Frontend Developer** o **Web UI Developer**.
+[VanguardiaPass Enterprise](https://jesusbustos12.github.io/Creador-de-contrase-as-seguras/)
 
 ---
 
 ## Contacto
-- **GitHub**: [github.com/JesusBustos12](https://github.com/JesusBustos12)
-- **LinkedIn**: [linkedin.com/in/jesus-bustos-arizmendi-325329283](https://linkedin.com/in/jesus-bustos-arizmendi-325329283)
+
+- **GitHub**: [JesusBustos12](https://github.com/JesusBustos12)
+- **LinkedIn**: [Jesús Bustos Arizmendi](https://linkedin.com/in/jesus-bustos-arizmendi-325329283)
 - **Correo**: jesusbustosarizmendi0@gmail.com
 - **Celular/WhatsApp**: +52 762 119 2732
-
-¡Gracias por revisar mi trabajo! 🚀
